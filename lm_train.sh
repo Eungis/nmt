@@ -1,0 +1,11 @@
+python3 lm_train.py \
+--model_fn ./models/chameleon.lm.pth \
+--train_fn ./data/chameleon.train.tok.pickle \
+--valid_fn ./data/chameleon.valid.tok.pickle \
+--tgt_src enko \
+--gpu_id 0 \
+--batch_size 16 \
+--n_epochs 20 \
+--max_length 256 \
+--off_autocast \
+--use_mps
